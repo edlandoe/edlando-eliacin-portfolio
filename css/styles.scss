@@ -177,7 +177,9 @@ header {
       font-size: 2em;
       img {
         margin: 0;
-        width: 125px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
       }
     }
   }
