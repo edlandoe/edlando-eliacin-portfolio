@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Analytics } from "@vercel/analytics/react";
+import MetaPhoto from "@/public/meta-photo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export const metadata = {
   title: "Edlando Eliacin | Software Engineer",
   description:
     "Edlando Eliacin is a software engineer based in Miami, Florida that has an interest in web application development",
+  image: { MetaPhoto },
 };
 
 export default function RootLayout({
