@@ -1,6 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaBandcamp, FaChalkboardTeacher, FaLaptopCode } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu"; 
 
 export const links = [
@@ -13,12 +12,12 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
   },
   {
     name: "Contact",
@@ -28,49 +27,57 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
+    title: "Americorps ACES Tutor",
     location: "Miami, FL",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I served as an Americorps tutor at a local high school, where I mentored students in IT and Web Dev.",
+    icon: React.createElement(FaChalkboardTeacher),
+    date: "2018",
+  },
+  {
+    title: "Student Webmaster Intern",
+    location: "Miami, FL",
+    description:
+      "I worked as a Student Webmaster Intern at FIU. I designed and developed websited for KFSCIS.",
+    icon: React.createElement(FaLaptopCode),
+    date: "2021 - 2023",
+  },
+  {
+    title: "Software Engineer Intern",
+    location: "Remote",
+    description:
+      "I interned at Bandcamp as a software engineer where I worked on a full stack project that involved Ruby, SQL, Javascript, and HTML/CSS.",
+    icon: React.createElement(FaBandcamp),
+    date: "2022",
+  },
+  {
+    title: "Graduated from Florida International University",
+    location: "Miami, FL",
+    description:
+      "I graduated from FIU where I earned a degree in computer science, and worked as a full time software engineer shortly after.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Full-Stack Software Engineer",
+    location: "Remote",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "After College, I was offered a full time position as a software engineer at Bandcamp, there I did full stack work for their web application on the vinyl team. ",
+    icon: React.createElement(FaBandcamp),
+    date: "2023",
   },
 ] as const;
 
 export const skillsData = [
   "HTML",
+  "Liquid",
   "CSS",
+  "SCSS",
   "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Ruby",
+  "Minitest",
+  "Java",
+  "mySQL",
+  "Software Testing",
+  "Git"
 ] as const;
