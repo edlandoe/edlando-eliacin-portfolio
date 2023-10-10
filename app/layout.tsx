@@ -15,7 +15,9 @@ export const metadata = {
   title: "Edlando Eliacin | Software Engineer",
   description:
     "Edlando Eliacin is a software engineer based in Miami, Florida that has an interest in web application development",
-  image: { MetaPhoto },
+  openGraph: {
+    images: { MetaPhoto },
+  },
 };
 
 export default function RootLayout({
