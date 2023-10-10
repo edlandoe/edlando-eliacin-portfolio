@@ -13,15 +13,17 @@ import MetaPhoto from "@/public/meta-photo.png";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Edlando Eliacin | Software Engineer",
-  description:
-    "Edlando Eliacin is a software engineer based in Miami, Florida that has an interest in web application development",
   openGraph: {
+    title: "Edlando Eliacin | Software Engineer",
+    description:
+      "Edlando Eliacin is a software engineer based in Miami, Florida that has an interest in web application development",
     images: [
       {
-        url: "https://nextjs.org/meta-photo.png",
+        url: "https://edlandoeliacin.com/meta-photo.png",
       },
     ],
+    locale: "en_US",
+    type: "website",
   },
 };
 
