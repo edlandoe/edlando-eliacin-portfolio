@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
@@ -11,12 +12,16 @@ import MetaPhoto from "@/public/meta-photo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Edlando Eliacin | Software Engineer",
   description:
     "Edlando Eliacin is a software engineer based in Miami, Florida that has an interest in web application development",
   openGraph: {
-    images: { MetaPhoto },
+    images: [
+      {
+        url: "https://nextjs.org/meta-photo.png",
+      },
+    ],
   },
 };
 
