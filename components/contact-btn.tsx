@@ -10,6 +10,7 @@ export default function ContactBtn() {
       type="submit"
       className="group flex items-center justify-center gap-2 h-[3rem] w-full sm:w-[8rem] bg-[#1d291b]  text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-[#151e14] active:scale-105 disabled:scale-100 disabled:bg-opacity-65 dark:bg-white dark:bg-opacity-10"
       disabled={pending}
+      aria-label="Submit Contact Form Button"
     >
       {pending ? (
         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
