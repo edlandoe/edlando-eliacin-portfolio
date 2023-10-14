@@ -12,6 +12,7 @@ import { useTheme } from "@/context/theme-context";
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
   const { theme } = useTheme();
+  const [submitted, setSubmitted] = React.useState(false);
 
   return (
     <motion.section
@@ -59,6 +60,7 @@ export default function Contact() {
             }
           }
 
+          setSubmitted(true);
           if (theme === "dark") {
             toast.success("Email Sent Successfully!", {
               style: {
@@ -89,7 +91,11 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <ContactBtn />
+        {!submitted ? (
+          <ContactBtn />
+        ) : (
+          <p className="text-gray-500">Email Sent Successfully!</p>
+        )}
       </form>
     </motion.section>
   );
