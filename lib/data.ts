@@ -1,6 +1,8 @@
 import React from "react";
 import { FaBandcamp, FaChalkboardTeacher, FaLaptopCode } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu"; 
+import { LuGraduationCap } from "react-icons/lu";
+import IpAddressChecker from "@/public/IP Address Checker.jpeg";
+import MiamiHeatProject from "@/public/The Miami Heat Project.jpeg";
 
 export const links = [
   {
@@ -12,12 +14,16 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Projects",
+    hash: "#projects",
   },
   {
     name: "Skills",
     hash: "#skills",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
   },
   {
     name: "Contact",
@@ -68,16 +74,39 @@ export const experiencesData = [
   },
 ] as const;
 
+export const projectsData = [
+  {
+    title: "IpAddress & Domain Checker",
+    description:
+      "A simple web application that allows you to check the IP address and domain of a website.",
+    tags: ["React.js", "Vite", "Tailwind", "Typescript"],
+    link: "https://ip-address-checker-iota.vercel.app/",
+    imageUrl: IpAddressChecker,
+  },
+  {
+    title: "Miami Heat Streamlit Project",
+    description:
+      "A Streamlit project that uses the NBA API to display Miami Heat stats.",
+    tags: ["Python", "Streamlit", "Pandas", "Altair"],
+    link: "https://miamiheatproject-app.streamlit.app/",
+    imageUrl: MiamiHeatProject,
+  },
+] as const;
+
 export const skillsData = [
   "HTML",
   "Liquid",
   "CSS",
   "SCSS",
   "JavaScript",
+  "TypeScript",
   "Ruby",
   "Minitest",
   "Java",
-  "mySQL",
+  "MySQL",
   "Software Testing",
-  "Git"
+  "Git",
+  "Python",
+  "React.js",
+  "Node.js",
 ] as const;
